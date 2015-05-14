@@ -72,7 +72,7 @@ Returns the initial world state
 ## onAction
 
 Send action to the SAGA system.
-    
+
 ###### Arguments
 - 'int id' — Actions id
 - 'bool execute' - Tells the SAGA system if the action was executed
@@ -97,4 +97,46 @@ Get an action from the SAGA system
 
 ###### Response:
 
+```json
+{
+    "id": 3277,
+    "name": "MOVE",
+    "planID": 1626,
+    "parentPlanID": 1606,
+    "lastAction": false,
+    "entities": [
+        {
+            "name": "WITCH",
+            "type": "Character"
+        },
+        {
+            "name": "TOWER",
+            "type": "Location"
+        },
+        {
+            "name": "FOUNTAIN",
+            "type": "Location"
+        }
+    ],
+    "effects": [
+        {
+            "name": "IS_AT",
+            "entity1": "WITCH",
+            "entity2": "TOWER",
+            "entity3": "",
+            "intensity": 0,
+            "operator": "REMOVE"
+        },
+        {
+            "name": "IS_AT",
+            "entity1": "WITCH",
+            "entity2": "FOUNTAIN",
+            "entity3": "",
+            "intensity": 0,
+            "operator": "ADD"
+        }
+    ],
+    "priority": 0
+}
+```
 
