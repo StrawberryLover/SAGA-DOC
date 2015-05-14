@@ -5,11 +5,13 @@ Uses [Netty-Socket.IO](https://github.com/mrniko/netty-socketio)  for Java imple
 Socket API Events
 ================================
 
-## To client, Events
+## To client events
 
 ### onWorldList
 
 Send to client on socket connection. 
+
+###### Response:
 
 ```json
 {
@@ -77,7 +79,7 @@ Send action to the SAGA system.
 - 'int id' — Actions id
 - 'bool execute' - Tells the SAGA system if the action was executed
     
-## To server, Events
+## To server events
 
 ## beginWorld
 
