@@ -5,6 +5,8 @@ Uses [Netty-Socket.IO](https://github.com/mrniko/netty-socketio)  for Java imple
 Socket API Events
 ================================
 
+## To client, Events
+
 ### onWorldList
 
 Send to client on socket connection. 
@@ -65,4 +67,34 @@ Returns the initial world state
     ]
 }
 ```
+
+    
+## onAction
+
+Send action to the SAGA system.
+    
+###### Arguments
+- 'int id' — Actions id
+- 'bool execute' - Tells the SAGA system if the action was executed
+    
+## To server, Events
+
+## beginWorld
+
+Begins the SAGA world
+
+## endWorld
+
+Ends the SAGA world
+    
+## resetWorld
+
+Resets the SAGA world
+
+## action
+
+Get an action from the SAGA system
+
+###### Response:
+
 
